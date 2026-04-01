@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>{{data.name}}</h2>
+<mat-dialog-content class="mat-typography">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="user.name" name="name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Descrição</mat-label>
+      <textarea matInput [(ngModel)]="user.description" name="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Valor</mat-label>
+      <input matInput [(ngModel)]="user.value" name="value">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Confirmar</button>
+</mat-dialog-actions>
