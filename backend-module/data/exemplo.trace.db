@@ -1,0 +1,12 @@
+2026-04-01 23:52:10.209409-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table tb_beneficios (id_beneficio uuid not null, name varchar(255), [*]value numeric(38,2), primary key (id_beneficio))"; expected "identifier"; SQL statement:
+create table tb_beneficios (id_beneficio uuid not null, name varchar(255), value numeric(38,2), primary key (id_beneficio)) [42001-224]
+2026-04-02 00:04:48.814644-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select bm1_0.id_beneficio,bm1_0.name,bm1_0.[*]value from tb_beneficios bm1_0"; expected "identifier"; SQL statement:
+select bm1_0.id_beneficio,bm1_0.name,bm1_0.value from tb_beneficios bm1_0 [42001-224]
+2026-04-02 00:10:35.495319-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table tb_beneficios (id_beneficio uuid not null, name varchar(255), [*]value numeric(38,2), primary key (id_beneficio))"; expected "identifier"; SQL statement:
+create table tb_beneficios (id_beneficio uuid not null, name varchar(255), value numeric(38,2), primary key (id_beneficio)) [42001-224]
+2026-04-02 00:15:26.424810-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select bm1_0.id_beneficio,bm1_0.name,bm1_0.[*]value from tb_beneficios bm1_0"; expected "identifier"; SQL statement:
+select bm1_0.id_beneficio,bm1_0.name,bm1_0.value from tb_beneficios bm1_0 [42001-224]

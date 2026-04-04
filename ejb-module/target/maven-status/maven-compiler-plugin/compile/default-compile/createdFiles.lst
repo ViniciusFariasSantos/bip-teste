@@ -1,0 +1,8 @@
+com\example\ejb\entity\Beneficio.class
+com\example\ejb\service\BeneficioEjbService.class
+com\example\ejb\rest\BeneficioResource.class
+com\example\ejb\repository\BeneficioRepository.class
+com\example\ejb\dto\BeneficioDTO.class
+com\example\ejb\rest\JaxRsConfig.class
+com\example\ejb\dto\ErrorDTO.class
+com\example\ejb\dto\TransferDTO.class

@@ -5,19 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6d617d2-7941-4620-a074-1b3186511e08" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/BeneficioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/controller/BeneficioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dtos/BeneficioRecordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/services/BeneficioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/dto/BeneficioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/dto/ErrorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/dto/TransferDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/entity/Beneficio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/repository/BeneficioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/rest/BeneficioResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/rest/JaxRsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/service/BeneficioEjbService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejb-module/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/backend-module.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/controller/BeneficioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/controllers/BeneficioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/src/main/resources/seed.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/BeneficioEjbService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="3BjznOPCcBsoqgYY2dxJded0PxN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,15 +61,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Maven.backend-module [install].executor": "Run",
+    "Maven.ejb-module [clean].executor": "Run",
+    "Maven.ejb-module [compile].executor": "Run",
+    "Maven.ejb-module [install].executor": "Run",
+    "Maven.ejb-module [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/front-layout",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lucia/work-space/bip-teste"
+    "last_opened_file_path": "C:/Users/lucia/work-space/bip-teste/ejb-module",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucia\work-space\bip-teste\ejb-module" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucia\work-space\bip-teste\ejb-module\src\main\resources" />
       <recent name="C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\controller" />
     </key>
   </component>
