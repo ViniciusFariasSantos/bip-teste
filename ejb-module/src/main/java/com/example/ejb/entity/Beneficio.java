@@ -71,5 +71,5 @@ public class Beneficio {
     public void setVersion(Long version) {
         this.version = version;
     }
-    // getters e setters
+
 }

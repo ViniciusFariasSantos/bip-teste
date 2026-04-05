@@ -22,6 +22,10 @@ public class BeneficioRepository {
         em.merge(b);
     }
 
+    public Beneficio buscarPorId(Long id) {
+        return em.find(Beneficio.class, id);
+    }
+
     public List<Beneficio> listar() {
         return em.createQuery("SELECT b FROM Beneficio b", Beneficio.class)
                 .getResultList();

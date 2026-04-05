@@ -77,10 +77,13 @@ public class BeneficioEjbService {
         repository.salvar(beneficio);
     }
 
-    public void atualizar(BeneficioDTO dto, Long id) {
-        Beneficio beneficio = new Beneficio();
+    public void atualizar(Long id,BeneficioDTO dto) {
+        Beneficio beneficio = repository.buscarPorId(id);
 
-        beneficio.setId(id);
+        if (beneficio == null) {
+            throw new IllegalArgumentException("Benefício não encontrado");
+        }
+
         beneficio.setNome(dto.getNome());
         beneficio.setDescricao(dto.getDescricao());
         beneficio.setValor(dto.getValor());

@@ -1,5 +1,6 @@
-C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\repositories\BeneficioRepository.java
+C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\services\BeneficioService.java
+C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\dtos\TransferDTO.java
 C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\controllers\BeneficioController.java
+C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\integration\BeneficioClient.java
 C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\dtos\BeneficioRecordDto.java
-C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\models\BeneficioModel.java
 C:\Users\lucia\work-space\bip-teste\backend-module\src\main\java\com\example\backend\BackendApplication.java

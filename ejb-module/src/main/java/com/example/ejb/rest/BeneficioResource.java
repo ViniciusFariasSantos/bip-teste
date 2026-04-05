@@ -34,10 +34,10 @@ public class BeneficioResource {
         service.transfer(dto.getFromId(), dto.getToId(), dto.getAmount());
     }
 
-    @POST
+    @PUT
     @Path("/{id}")
     public void atualizar(@PathParam("id") Long id, BeneficioDTO dto) {
-        service.atualizar(dto, id);
+        service.atualizar(id, dto);
     }
 
     @DELETE

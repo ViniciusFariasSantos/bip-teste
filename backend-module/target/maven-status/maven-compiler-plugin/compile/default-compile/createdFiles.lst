@@ -1,5 +1,6 @@
-com\example\springboot\controllers\BeneficioController.class
-com\example\springboot\repositories\BeneficioRepository.class
+com\example\backend\dtos\BeneficioRecordDto.class
+com\example\backend\controllers\BeneficioController.class
+com\example\backend\dtos\TransferDTO.class
 com\example\backend\BackendApplication.class
-com\example\springboot\dtos\BeneficioRecordDto.class
-com\example\springboot\models\BeneficioModel.class
+com\example\backend\integration\BeneficioClient.class
+com\example\backend\services\BeneficioService.class
