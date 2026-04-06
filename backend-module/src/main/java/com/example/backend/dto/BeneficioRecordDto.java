@@ -1,7 +1,4 @@
-package com.example.backend.dtos;
-
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+package com.example.backend.dto;
 
 import java.math.BigDecimal;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -20,6 +17,9 @@ public record BeneficioRecordDto(
         BigDecimal value,
 
         @JsonProperty("ativo")
-        Boolean active
+        Boolean active,
+
+        @JsonProperty("version")
+        String version
 
 ) {}

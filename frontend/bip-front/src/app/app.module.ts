@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,8 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
+import { TransactionService } from './service/transaction.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -21,9 +23,10 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     DialogCrudComponent,
-    TableCrudComponent
+    TableCrudComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -34,9 +37,12 @@ import {FormsModule} from '@angular/forms';
     MatDialogModule,
     FormsModule, 
     MatFormFieldModule, 
-    MatInputModule
+    MatInputModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    HttpClient,
+    TransactionService],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

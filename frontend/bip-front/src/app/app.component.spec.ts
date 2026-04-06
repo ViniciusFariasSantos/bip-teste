@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('bip-front');
   });
 
-  it('should render title', () => {
+  it('should render the toolbar title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('bip-front app is running!');
+    expect(compiled.querySelector('.toolbar span')?.textContent).toContain('Welcome');
   });
 });

@@ -1,7 +1,7 @@
-package com.example.backend.services;
+package com.example.backend.service;
 
-import com.example.backend.dtos.BeneficioRecordDto;
-import com.example.backend.dtos.TransferDTO;
+import com.example.backend.dto.BeneficioRecordDto;
+import com.example.backend.dto.TransferDTO;
 import com.example.backend.integration.BeneficioClient;
 import org.springframework.stereotype.Service;
 

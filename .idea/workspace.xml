@@ -5,43 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6d617d2-7941-4620-a074-1b3186511e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dtos/TransferDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/integration/BeneficioClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-module/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/springboot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/test/java/com/example/backend/controller/BeneficioControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/test/java/com/example/backend/dto/BeneficioRecordDtoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/test/java/com/example/backend/dto/TransferDTOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/test/java/com/example/backend/integration/BeneficioClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-module/src/test/java/com/example/backend/service/BeneficioServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/bip-front/proxy.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/model/transaction.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/model/transfer.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/service/transaction.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/service/transaction.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/controllers/BeneficioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/controllers/BeneficioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dtos/BeneficioRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dtos/BeneficioRecordDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/services/BeneficioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/services/BeneficioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/controllers/BeneficioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/controllers/BeneficioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/dtos/BeneficioRecordDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/dtos/BeneficioRecordDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/models/BeneficioModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/repositories/BeneficioRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/controllers/BeneficioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/controller/BeneficioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dtos/BeneficioRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dto/BeneficioRecordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dtos/TransferDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/dto/TransferDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/integration/BeneficioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/integration/BeneficioClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/services/BeneficioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/src/main/java/com/example/backend/service/BeneficioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/controllers/BeneficioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/dtos/BeneficioRecordDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/dtos/TransferDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/integration/BeneficioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/integration/BeneficioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-module/target/classes/com/example/backend/services/BeneficioService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-module/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-module/target/springboot-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/springboot-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-module/target/springboot-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/backend-module/target/springboot-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/entity/Beneficio.java" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/entity/Beneficio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/repository/BeneficioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/repository/BeneficioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/rest/BeneficioResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/rest/BeneficioResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/service/BeneficioEjbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/src/main/java/com/example/ejb/service/BeneficioEjbService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/src/main/resources/seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/seed.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejb-module/target/classes/com/example/ejb/repository/BeneficioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/classes/com/example/ejb/repository/BeneficioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/classes/com/example/ejb/rest/BeneficioResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/classes/com/example/ejb/rest/BeneficioResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejb-module/target/classes/com/example/ejb/service/BeneficioEjbService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/classes/com/example/ejb/service/BeneficioEjbService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/classes/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/classes/seed.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ejb-module/target/ejb-module.war" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/ejb-module.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/com/example/ejb/repository/BeneficioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/com/example/ejb/repository/BeneficioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/com/example/ejb/rest/BeneficioResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/com/example/ejb/rest/BeneficioResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/com/example/ejb/service/BeneficioEjbService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/com/example/ejb/service/BeneficioEjbService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejb-module/target/ejb-module/WEB-INF/classes/seed.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/dialog-crud/dialog-crud.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/dialog-crud/dialog-crud.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/dialog-crud/dialog-crud.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/dialog-crud/dialog-crud.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/dialog-crud/dialog-crud.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/dialog-crud/dialog-crud.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/src/app/table-crud/table-crud.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/bip-front/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/bip-front/tsconfig.spec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +81,12 @@
   "keyToString": {
     "Application.BackendApplication.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.BackendApplicationTest.executor": "Coverage",
+    "JUnit.BeneficioClientTest.executor": "Coverage",
+    "JUnit.BeneficioControllerTest.executor": "Coverage",
+    "JUnit.BeneficioServiceTest.executor": "Coverage",
+    "JUnit.TransferDTOTest.executor": "Coverage",
+    "JUnit.com.example.backend in springboot.executor": "Coverage",
     "Maven.backend-module [install].executor": "Run",
     "Maven.ejb-module [clean].executor": "Run",
     "Maven.ejb-module [compile].executor": "Run",
@@ -80,12 +96,13 @@
     "Maven.springboot [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/ejb",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "featue/final-project",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/lucia/work-space/bip-teste/backend-module/src/main",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
@@ -103,7 +120,7 @@
       <recent name="com.example.backend.dtos" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BackendApplication">
     <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.backend.BackendApplication" />
       <module name="springboot" />
@@ -117,9 +134,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BackendApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.example.backend.BackendApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeneficioClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backend.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.backend.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.example.backend.integration.BeneficioClientTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransferDTOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backend.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.backend.dto" />
+      <option name="MAIN_CLASS_NAME" value="com.example.backend.dto.TransferDTOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.backend in springboot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.backend" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BackendApplication" />
+        <item itemvalue="JUnit.com.example.backend in springboot" />
+        <item itemvalue="JUnit.BackendApplicationTest" />
+        <item itemvalue="JUnit.TransferDTOTest" />
+        <item itemvalue="JUnit.BeneficioClientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -133,5 +213,25 @@
       <updated>1775017434753</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bip_teste$BeneficioControllerTest.ic" NAME="BeneficioControllerTest Coverage Results" MODIFIED="1775467253258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.backend.controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/bip_teste$BeneficioServiceTest.ic" NAME="BeneficioServiceTest Coverage Results" MODIFIED="1775467833077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.backend.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/bip_teste$BeneficioClientTest.ic" NAME="BeneficioClientTest Coverage Results" MODIFIED="1775468622659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.backend.integration.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/bip_teste$BackendApplicationTest.ic" NAME="BackendApplicationTest Coverage Results" MODIFIED="1775469032544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.backend.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/bip_teste$com_example_backend_in_springboot.ic" NAME="com.example.backend in springboot Coverage Results" MODIFIED="1775469125201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.backend.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/bip_teste$TransferDTOTest.ic" NAME="TransferDTOTest Coverage Results" MODIFIED="1775468870853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.backend.dto.*</FILTER>
+    </SUITE>
   </component>
 </project>

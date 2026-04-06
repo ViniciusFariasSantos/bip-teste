@@ -93,10 +93,12 @@ public class BeneficioEjbService {
     }
 
     public void deletar(Long id) {
+        Beneficio beneficio = repository.buscarPorId(id);
+
         if (id == null) {
             throw new javax.ws.rs.WebApplicationException("Benefício não encontrado", 404);
         }
-        repository.deletar(id);
+        repository.deletar(beneficio);
     }
 
 }

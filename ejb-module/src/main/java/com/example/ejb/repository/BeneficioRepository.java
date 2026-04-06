@@ -35,8 +35,7 @@ public class BeneficioRepository {
         em.persist(beneficio);
     }
 
-    public void deletar(Long id) {
-        Beneficio beneficio = em.find(Beneficio.class, id);
+    public void deletar(Beneficio beneficio) {
         em.remove(beneficio);
     }
 

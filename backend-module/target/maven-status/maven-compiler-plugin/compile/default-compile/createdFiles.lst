@@ -3,4 +3,5 @@ com\example\backend\controllers\BeneficioController.class
 com\example\backend\dtos\TransferDTO.class
 com\example\backend\BackendApplication.class
 com\example\backend\integration\BeneficioClient.class
+OpenApiConfig.class
 com\example\backend\services\BeneficioService.class

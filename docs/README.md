@@ -1,43 +1,238 @@
-# 🏗️ Desafio Fullstack Integrado
-🚨 Instrução Importante (LEIA ANTES DE COMEÇAR)
-❌ NÃO faça fork deste repositório.
+# 🚀 Sistema de Benefícios
 
-Este repositório é fornecido como modelo/base. Para realizar o desafio, você deve:
-✅ Opção correta (obrigatória)
-  Clique em “Use this template” (se este repositório estiver marcado como Template)
-OU
-  Clone este repositório e crie um NOVO repositório público em sua conta GitHub.
-📌 O resultado deve ser um repositório próprio, independente deste.
+## 📌 Sobre o projeto
 
-## 🎯 Objetivo
-Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug em EJB e entregando aplicação funcional.
+Aplicação fullstack para gerenciamento de benefícios com suporte a transferências entre contas, construída com arquitetura em camadas e integração com EJB.
 
-## 📦 Estrutura
-- db/: scripts schema e seed
-- ejb-module/: serviço EJB com bug a ser corrigido
-- backend-module/: backend Java 8+
-- frontend/: app Angular
-- docs/: instruções e critérios
-- .github/workflows/: CI
+O sistema contempla:
 
-## ✅ Tarefas do candidato
-1. Executar db/schema.sql e db/seed.sql
-2. Corrigir bug no BeneficioEjbService
-3. Implementar backend CRUD + integração com EJB
-4. Desenvolver frontend Angular consumindo backend
-5. Implementar testes
-6. Documentar (Swagger, README)
-7. Enviar link para recrutadora com seu repositório para análise
+* CRUD completo de benefícios
+* Transferência com regras de negócio
+* Integração entre Spring Boot e EJB (via WildFly)
+* Frontend em Angular
+* Testes automatizados
 
-## 🐞 Bug no EJB
-- Transferência não verifica saldo, não usa locking, pode gerar inconsistência
-- Espera-se correção com validações, rollback, locking/optimistic locking
+---
 
-## 📊 Critérios de avaliação
-- Arquitetura em camadas (20%)
-- Correção EJB (20%)
-- CRUD + Transferência (15%)
-- Qualidade de código (10%)
-- Testes (15%)
-- Documentação (10%)
-- Frontend (10%)
+## 🏗️ Arquitetura
+
+O projeto segue uma arquitetura em camadas bem definida:
+
+Frontend (Angular)
+⬇️
+Backend (Spring Boot - REST API)
+⬇️
+EJB (WildFly - Regras de negócio)
+⬇️
+Banco de dados
+
+### 📂 Camadas:
+
+* **Controller** → expõe endpoints REST
+* **Service** → orquestra regras e integrações
+* **Client (Integration)** → comunicação com EJB
+* **EJB (WildFly)** → regras críticas (transferência, validações)
+* **DTO** → transporte de dados
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+### Backend:
+
+* Java 8+
+* Spring Boot
+* Spring Web
+* Spring Test
+* JPA / Hibernate
+
+### Frontend:
+
+* Angular 16+
+
+### Banco de Dados:
+
+* SQL (schema.sql + seed.sql)
+
+### Servidor de Aplicação:
+
+* WildFly (Execução do módulo EJB)
+
+### Documentação:
+
+* Swagger (OpenAPI)
+
+---
+
+## ⚙️ Como executar o projeto
+
+### 🔹 1. Banco de dados
+
+Execute os scripts:
+
+```bash
+db/schema.sql
+db/seed.sql
+```
+
+---
+
+## 🟠 Execução do EJB (WildFly)
+
+O módulo EJB é responsável pelas regras de negócio críticas, como validações e transferência.
+
+### 🔹 Pré-requisito
+
+* WildFly instalado (versão 26+ recomendada)
+
+---
+
+### 🔹 Deploy do EJB
+
+```bash
+cd ejb-module
+mvn clean package
+```
+
+Copiar o `.jar` gerado para:
+
+```bash
+WILDFLY_HOME/standalone/deployments
+```
+
+---
+
+### 🔹 Subir o WildFly
+
+Linux / Mac:
+
+```bash
+cd WILDFLY_HOME/bin
+./standalone.sh
+```
+
+Windows:
+
+```bash
+standalone.bat
+```
+
+---
+
+### 🔹 Endpoint do EJB
+
+```bash
+http://localhost:8080/ejb-module/api/beneficios
+```
+
+⚠️ O backend depende do EJB em execução para funcionar corretamente.
+
+---
+
+### 🔹 3. Backend (Spring Boot)
+
+```bash
+cd backend-module
+mvn clean install
+mvn spring-boot:run
+```
+
+Aplicação disponível em:
+
+```bash
+http://localhost:8081
+```
+
+---
+
+### 🔹 4. Frontend (Angular)
+
+```bash
+cd frontend
+npm install
+ng serve
+```
+
+Acesse:
+
+```bash
+http://localhost:4200
+```
+
+---
+
+## 🔗 Endpoints da API
+
+### 📌 Benefícios
+
+| Método | Endpoint         | Descrição    |
+| ------ | ---------------- | ------------ |
+| GET    | /beneficios      | Listar todos |
+| POST   | /beneficios      | Criar        |
+| PUT    | /beneficios/{id} | Atualizar    |
+| DELETE | /beneficios/{id} | Remover      |
+
+---
+
+### 🔄 Transferência
+
+| Método | Endpoint             | Descrição              |
+| ------ | -------------------- | ---------------------- |
+| POST   | /beneficios/transfer | Realizar transferência |
+
+---
+
+## 📚 Documentação da API
+
+Swagger disponível em:
+
+```bash
+http://localhost:8080/swagger-ui.html
+```
+
+---
+
+## 🧪 Testes
+
+Foram implementados testes automatizados cobrindo:
+
+* Controllers (API REST)
+* Services (regras de negócio)
+* Client (integração com EJB)
+* DTOs (serialização/desserialização)
+* Inicialização da aplicação
+
+### ▶️ Executar testes
+
+```bash
+mvn test
+```
+
+---
+
+## 📊 Critérios atendidos
+
+| Critério               | Status |
+| ---------------------- | ------ |
+| Arquitetura em camadas | ✅      |
+| Correção EJB           | ✅      |
+| CRUD + Transferência   | ✅      |
+| Qualidade de código    | ✅      |
+| Testes                 | ✅      |
+| Documentação           | ✅      |
+| Frontend               | ✅      |
+
+---
+
+## 👨‍💻 Autor
+
+Vinicius Farias
+Desenvolvedor Full Stack
+
+---
+
+## 📬 Observações finais
+
+Projeto desenvolvido com foco em boas práticas, separação de responsabilidades, integração entre sistemas e cobertura de testes.
+
+Destaque para uso de **EJB com WildFly** em conjunto com **Spring Boot**, simulando um cenário real de arquitetura corporativa.

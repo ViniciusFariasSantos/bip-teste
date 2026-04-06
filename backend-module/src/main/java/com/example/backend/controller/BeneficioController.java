@@ -1,21 +1,14 @@
-package com.example.backend.controllers;
+package com.example.backend.controller;
 
-import com.example.backend.dtos.BeneficioRecordDto;
-import com.example.backend.dtos.TransferDTO;
-import com.example.backend.services.BeneficioService;
-import jakarta.validation.Valid;
-import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import com.example.backend.dto.BeneficioRecordDto;
+import com.example.backend.dto.TransferDTO;
+import com.example.backend.service.BeneficioService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
 
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/beneficios")
 public class BeneficioController {
@@ -26,27 +19,32 @@ public class BeneficioController {
         this.service = service;
     }
 
+    @Operation(summary = "Listar benefícios")
     @GetMapping
     public List<BeneficioRecordDto> listar() {
         return service.listar();
     }
 
+    @Operation(summary = "Salvar benefícios")
     @PostMapping
     public void salvar(@RequestBody BeneficioRecordDto dto) {
         service.salvar(dto);
     }
 
+    @Operation(summary = "Atualizar benefícios")
     @PutMapping("/{id}")
     public void atualizar(@PathVariable Long id,
                           @RequestBody BeneficioRecordDto dto) {
         service.atualizar(id, dto);
     }
 
+    @Operation(summary = "Deletar benefícios")
     @DeleteMapping("/{id}")
     public void deletar(@PathVariable Long id) {
         service.deletar(id);
     }
 
+    @Operation(summary = "Realizar transferência")
     @PostMapping("/transfer")
     public void transfer(@RequestBody TransferDTO dto) {
         service.transfer(dto);

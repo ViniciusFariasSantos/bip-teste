@@ -1,23 +1,41 @@
 <h2 mat-dialog-title>{{data.name}}</h2>
-<mat-dialog-content class="mat-typography">
+<mat-dialog-content class="mat-typography" *ngIf="booleanTransfer === false">
   <form class="example-form">
     <mat-form-field class="example-full-width">
       <mat-label>Nome</mat-label>
-      <input matInput [(ngModel)]="user.name" name="name">
+      <input matInput [disabled]="booleanName" [(ngModel)]="user.nome" name="name">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Descrição</mat-label>
-      <textarea matInput [(ngModel)]="user.description" name="description"></textarea>
+      <textarea matInput [disabled]="booleanName" [(ngModel)]="user.descricao" name="description"></textarea>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Valor</mat-label>
-      <input matInput [(ngModel)]="user.value" name="value">
+      <input matInput [disabled]="booleanName" [(ngModel)]="user.valor" name="value">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-content class="mat-typography" *ngIf="booleanTransfer === true">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>conta origem</mat-label>
+      <input matInput  disabled [(ngModel)]="transfer.toId" name="name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Conta Destino</mat-label>
+      <textarea matInput [(ngModel)]="transfer.fromId" name="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Valor</mat-label>
+      <input matInput [(ngModel)]="transfer.amount" name="value">
     </mat-form-field>
   </form>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Confirmar</button>
+  <button mat-button (click)="clickButton()">Confirmar</button>
 </mat-dialog-actions>
