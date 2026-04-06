@@ -16,6 +16,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import { TransactionService } from './service/transaction.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -38,6 +39,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     FormsModule, 
     MatFormFieldModule, 
     MatInputModule,
+    MatSnackBarModule,
   ],
   providers: [
     HttpClient,

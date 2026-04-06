@@ -236,3 +236,4 @@ Desenvolvedor Full Stack
 Projeto desenvolvido com foco em boas práticas, separação de responsabilidades, integração entre sistemas e cobertura de testes.
 
 Destaque para uso de **EJB com WildFly** em conjunto com **Spring Boot**, simulando um cenário real de arquitetura corporativa.
+
